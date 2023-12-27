@@ -48,5 +48,8 @@ def get_player_detail(request, slug):
     # handle path: api/players/<slug:slug>/
     app = Player.objects.filter(slug=slug)
     serializer = PlayerSerializer(app, many=True)
+    if len(serializer.data)==0:
+        data = {'error': 'Player not found'}
+        return Response(data, status=404)
     return Response(serializer.data)
 
