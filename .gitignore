@@ -3,6 +3,7 @@
 *.pot
 *.pyc
 __pycache__
+Players_Attribute_Backend/__pycache__
 db.sqlite3
 media
 
@@ -11,6 +12,7 @@ media
 
 # If you are using PyCharm #
 # User-specific stuff
+.idea/
 .idea/**/workspace.xml
 .idea/**/tasks.xml
 .idea/**/usage.statistics.xml
